@@ -1,6 +1,7 @@
 import { useMachine } from "@xstate/react";
 import { fetchMachine } from "./StateMachine";
 import { usStates } from "./usStates";
+import DemoSwitcher from "./DemoSwitcher";
 import "./App.css";
 
 const toReadable = ([k, v]) => (
@@ -69,6 +70,7 @@ function App() {
 
   return (
     <div className="App">
+      <DemoSwitcher />
       <header className="App-header">
         <h2>Current State: {state.value}</h2>
 
